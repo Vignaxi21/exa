@@ -1,0 +1,26 @@
+import React from 'react';
+import './App.css';
+import { ReactComponent as Logo } from './Vector.svg'; // This is the new way to import the SVG
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <Logo className="App-logo" /> {/* Use the imported component here */}
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://www.propelleraero.com/dirtmate/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn about DirtMate
+        </a>
+      </header>
+    </div>
+  );
+}
+
+export default App;
